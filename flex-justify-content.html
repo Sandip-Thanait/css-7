@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex justify content</title>
+    <style>
+        .container{
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+           /*  justify-content: center; /*works on main axis i.e x-axis/*/
+            /* justify-content:flex-end; */
+            /* justify-content: flex-start;  */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* align-items: center; works on cross axis i.e y-axis */
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            /* margin: 5px 10px; */
+            background-color: rgb(233, 97, 188);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
